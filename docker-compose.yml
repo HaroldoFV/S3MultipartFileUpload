@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  s3multipartfileupload-api:
+    build:
+      context: .
+      dockerfile: S3MultipartFileUpload.API/Dockerfile
+    container_name: s3multipartfileupload-api
+    ports:
+      - "5000:8080"
+    env_file:
+      - .env
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - S3Settings__BucketName=${AWS_BUCKET_NAME}
+      - S3Settings__BucketRegion=${AWS_BUCKET_REGION}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{15F06E18-1064-4AEA-AEEF-6DDF454E97AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B398BDED-836E-4397-B4D2-61EB8BA96C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3MultipartFileUpload.API", "S3MultipartFileUpload.API\S3MultipartFileUpload.API.csproj", "{0AF4241F-2E4C-46C0-B0E1-7D4AB176BC46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AF4241F-2E4C-46C0-B0E1-7D4AB176BC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF4241F-2E4C-46C0-B0E1-7D4AB176BC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF4241F-2E4C-46C0-B0E1-7D4AB176BC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF4241F-2E4C-46C0-B0E1-7D4AB176BC46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0AF4241F-2E4C-46C0-B0E1-7D4AB176BC46} = {15F06E18-1064-4AEA-AEEF-6DDF454E97AA}
+	EndGlobalSection
+EndGlobal
