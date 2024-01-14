@@ -73,7 +73,7 @@ public class UploadService : IUploadService
         // Definindo o tamanho das partes do arquivo (5MB)
         long partSize = 5 * (long) Math.Pow(2, 20); // 5 MB.
 
-        // Acompanhando o progresso do upload
+        // Define a posição do próximo upload e o tamanho total do arquivo
         long currentPosition = uploadState.NextFilePosition;
         long fileLength = new FileInfo(filePath).Length;
 
@@ -93,6 +93,7 @@ public class UploadService : IUploadService
                 FilePath = filePath
             };
 
+            // Monitora e exibe em tempo real a progressão da transferência do arquivo
             uploadRequest.StreamTransferProgress += (sender, args) =>
             {
                 Console.WriteLine($"Transferred: {args.TransferredBytes}/{args.TotalBytes}");
